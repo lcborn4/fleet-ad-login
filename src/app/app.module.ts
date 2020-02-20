@@ -18,7 +18,7 @@ import { SuccessComponent } from './success/success.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot(),
+    NgbModule,
     FormsModule,
     ReactiveFormsModule
   ],
