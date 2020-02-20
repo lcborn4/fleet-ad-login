@@ -1,27 +1,57 @@
-# FleetLogin
+# Login Project for Fleet Advantage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+#### Author: Logan Born
 
-## Development server
+Built using  [Angular CLI](documentation/angularCLI.md)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Tech
+- Angular 8
+- Bootstrap 4+
 
-## Code scaffolding
+## Plan
+- bootstrap 4
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- we need to add a validator for:
+  - first name
+    - required
+    - min 1, max 56
+  - last name
+    - required
+    - min 1, max 56
+  - date of birth
+    - required
+    - can't be greater than today - dynamic
 
-## Build
+## Steps:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- global angular installed
+- Create new project
+  - ng new login
 
-## Running unit tests
+- need to install bootstrap
+  - ng add @ng-bootstrap/schematics
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- created login component
+  - ng g c login
 
-## Running end-to-end tests
+- build form
+  - first name,
+  - last name,
+  - dob
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- grabbed spinner from 
+  - https://getbootstrap.com/docs/4.4/components/spinners/
 
-## Further help
+- need a date picker
+  -https://ng-bootstrap.github.io/#/components/datepicker/examples
+- for calendar icon
+  - npm install bootstrap-icons
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- created success component
+  - ng g c success
+- sucessful login will route to success page
+
+- created custom validator for date of birth
+
+- activated route for success
+  - check out the data!
